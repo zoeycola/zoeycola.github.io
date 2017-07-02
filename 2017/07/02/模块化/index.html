@@ -14,7 +14,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/07/02/模块化/index.html">
 <meta property="og:site_name" content="zoeycola">
 <meta property="og:description" content="CommonJSjs代码的模块化标准，不适用于前端开发，NodeJS在使用该标准实现模块化 AMDAsync Module Definition 异步模块定义 尽可能早的加载所有需要用到的模块，模块的加载都是异步的，如果要在模块加载完成后，利用模块中的内容实现某些功能，需要将代码写在 require的第二个参数的回调函数中 require.js   CMDCommon Module Definit">
-<meta property="og:updated_time" content="2017-07-02T00:23:16.587Z">
+<meta property="og:updated_time" content="2017-07-02T00:31:59.169Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="模块化">
 <meta name="twitter:description" content="CommonJSjs代码的模块化标准，不适用于前端开发，NodeJS在使用该标准实现模块化 AMDAsync Module Definition 异步模块定义 尽可能早的加载所有需要用到的模块，模块的加载都是异步的，如果要在模块加载完成后，利用模块中的内容实现某些功能，需要将代码写在 require的第二个参数的回调函数中 require.js   CMDCommon Module Definit">
@@ -177,8 +177,7 @@
 <p>require.js  </p>
 <h3 id="CMD"><a href="#CMD" class="headerlink" title="CMD"></a>CMD</h3><p>Common Module Definition 通用模块定义</p>
 <p>尽可能晚的加载模块，哪里用到了模块再去加载</p>
-<p>sea.js</p>
-<p>##　require.js实现模块化</p>
+<p>sea.js<br>require.js实现模块化</p>
 <h3 id="定义模块"><a href="#定义模块" class="headerlink" title="定义模块"></a>定义模块</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">define([<span class="string">"当前模块的依赖项"</span>...], <span class="function"><span class="keyword">function</span>(<span class="params">使用形参接收依赖项的返回值</span>)</span>&#123;</div><div class="line">	<span class="comment">//当前模块中要实现的功能</span></div><div class="line"></div><div class="line">	<span class="comment">//当前模块如果要提供内容给模块调用者使用，就需要通过return语句将需要体用给别人的内容进行返回</span></div><div class="line"></div><div class="line">	<span class="keyword">return</span> 需要给别人提供的内容;</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
 <h3 id="引用模块"><a href="#引用模块" class="headerlink" title="引用模块"></a>引用模块</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">require</span>([<span class="string">"模块路径/模块别名"</span>...], <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">	<span class="comment">//这个函数会在模块加载完成之后，被调用起来</span></div><div class="line">	<span class="comment">//如果想在模块加载完成后实现某些功能，那么代码都写到这个函数中！</span></div><div class="line">&#125;)</div></pre></td></tr></table></figure>
 <h3 id="data-main"><a href="#data-main" class="headerlink" title="data-main"></a>data-main</h3><p>在引用require.js的script标签中可以通过data-main指定一个入口文件，这个入口文件中的内容，会在reuqirejs加载完毕之后，被自动执行。</p>
