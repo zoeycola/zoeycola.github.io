@@ -6,14 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>zoeycola</title>
+  <title>模块化 | zoeycola</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="zoeycola">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="CommonJSjs代码的模块化标准，不适用于前端开发，NodeJS在使用该标准实现模块化 AMDAsync Module Definition 异步模块定义 尽可能早的加载所有需要用到的模块，模块的加载都是异步的，如果要在模块加载完成后，利用模块中的内容实现某些功能，需要将代码写在 require的第二个参数的回调函数中 require.js   CMDCommon Module Definit">
+<meta property="og:type" content="article">
+<meta property="og:title" content="模块化">
+<meta property="og:url" content="http://yoursite.com/2017/07/02/模块化/index.html">
 <meta property="og:site_name" content="zoeycola">
+<meta property="og:description" content="CommonJSjs代码的模块化标准，不适用于前端开发，NodeJS在使用该标准实现模块化 AMDAsync Module Definition 异步模块定义 尽可能早的加载所有需要用到的模块，模块的加载都是异步的，如果要在模块加载完成后，利用模块中的内容实现某些功能，需要将代码写在 require的第二个参数的回调函数中 require.js   CMDCommon Module Definit">
+<meta property="og:updated_time" content="2017-07-02T00:23:16.587Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="zoeycola">
+<meta name="twitter:title" content="模块化">
+<meta name="twitter:description" content="CommonJSjs代码的模块化标准，不适用于前端开发，NodeJS在使用该标准实现模块化 AMDAsync Module Definition 异步模块定义 尽可能早的加载所有需要用到的模块，模块的加载都是异步的，如果要在模块加载完成后，利用模块中的内容实现某些功能，需要将代码写在 require的第二个参数的回调函数中 require.js   CMDCommon Module Definit">
   
     <link rel="alternative" href="/atom.xml" title="zoeycola" type="application/atom+xml">
   
@@ -147,16 +151,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-模块化" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-模块化" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/07/02/模块化/">模块化</a>
+    <h1 class="article-title" itemprop="name">
+      模块化
     </h1>
   
 
@@ -206,80 +208,26 @@
       
 
       
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/07/02/模块化/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-  
-    <article id="post-WAMPServer" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/06/27/WAMPServer/">WAMPServer介绍</a>
-    </h1>
-  
-
-        
-        <a href="/2017/06/27/WAMPServer/" class="archive-article-date">
-  	<time datetime="2017-06-27T00:44:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-27</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h2><p>W: windows<br>A: Apache<br>M: MySQL<br>P: PHP</p>
-<p>生产环境： 提供线上给用户使用的，正常工作了的项目，所在的环境的就是生产换成</p>
-<p>开发环境： 程序员开发的时候使用的这个环境</p>
-<p>windows下一个集成了网页服务，数据库服务，以及后台语言运行环境的集成测试环境</p>
-<h2 id="安装步骤"><a href="#安装步骤" class="headerlink" title="安装步骤"></a>安装步骤</h2><ol>
-<li>直接打开安装包</li>
-<li>一路默认，遇到选择安装路径的时候，尽量直接安装到c盘默认的路径</li>
-<li>可能会出现某些同学没有默认浏览器的情况，自己找到浏览器选择一下就行</li>
-<li>还可能出现火狐浏览器的一个提示，随便选</li>
-</ol>
-<h2 id="配置WAMP"><a href="#配置WAMP" class="headerlink" title="配置WAMP"></a>配置WAMP</h2><ol>
-<li>配置网站根目录</li>
-</ol>
-<p>1.1 打开httpd.conf文件， 可以通过点击任务栏右边的wamp图标，找到apache，再找到httpd.conf文件打开</p>
-<pre><code>C:\wamp\bin\apache\Apache2.2.21\conf
-</code></pre><p>1.2 找到DocumentRoot配置项，将需要作为网站跟目录的文件夹路径配置到后面<br>    DocumentRoot “C:/Users/Ryan/Desktop/blog”</p>
-<p>1.3 找到 </p>
-<p><code>&lt;Directory &quot;C:/wamp/www&quot;&gt;</code><br>    改成<br><code>&lt;Directory &quot;网站根目录的路径&quot;&gt;</code></p>
-<p>例子在下面，里面的内容照抄<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="string">`&lt;Directory "C:/Users/Ryan/Desktop/blog"&gt;`</span></div><div class="line">    Options Indexes FollowSymLinks</div><div class="line">    AllowOverride all</div><div class="line">    Order Deny,Allow</div><div class="line">    Allow <span class="keyword">from</span> all</div><div class="line"><span class="string">`&lt;/Directory&gt;`</span></div></pre></td></tr></table></figure></p>
-<h2 id="虚拟主机的配置"><a href="#虚拟主机的配置" class="headerlink" title="虚拟主机的配置"></a>虚拟主机的配置</h2><p>就是给每一个域名绑定一个指定的根目录，在通过指定的域名来访问服务器的时候，apche会对应的找到这域名的根目录来获取文件！</p>
-<ol>
-<li><p>开启vhosts配置，  打开httpd.conf ，找到<br>#Include conf/extra/httpd-vhosts.conf<br>去掉前面的#，变成<br>Include conf/extra/httpd-vhosts.conf</p>
-</li>
-<li><p>想要在vhosts中新增一个域名和目录绑定的节点，只需要添加如下内容</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="string">`&lt;VirtualHost *:80&gt;`</span></div><div class="line">    <span class="string">`DocumentRoot "网站根目录"`</span></div><div class="line">    <span class="string">`ServerName 域名`</span></div><div class="line">    <span class="string">`ServerAlias www.域名`</span></div><div class="line">    <span class="string">`ErrorLog "logs/dummy-host.example.com-error.log"`</span></div><div class="line">    <span class="string">`CustomLog "logs/dummy-host.example.com-access.log" common`</span></div><div class="line"><span class="string">`&lt;/VirtualHost&gt;`</span></div></pre></td></tr></table></figure>
-</li>
-</ol>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="string">`&lt;Directory "网站根目录"&gt;`</span></div><div class="line">    <span class="string">`Options Indexes FollowSymLinks`</span></div><div class="line">    <span class="string">`AllowOverride all`</span></div><div class="line">    <span class="string">`Order Deny,Allow`</span></div><div class="line">    <span class="string">`Allow from all`</span></div><div class="line"><span class="string">`&lt;/Directory&gt;`</span></div></pre></td></tr></table></figure>
-
-      
-
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
       
     </div>
     <div class="article-info article-info-index">
@@ -288,180 +236,85 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/06/27/WAMPServer/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/07/02/模块化/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
 
-
-
-
-
   
-    <article id="post-JOhnny-Depp" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+<nav id="article-nav">
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/06/26/JOhnny-Depp/">JOhnny Depp</a>
-    </h1>
   
-
-        
-        <a href="/2017/06/26/JOhnny-Depp/" class="archive-article-date">
-  	<time datetime="2017-06-26T13:44:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-26</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><img src="http://wx4.sinaimg.cn/mw690/76de6aa5gy1fgzgcvdcefj20j60rkta9.jpg" alt="Image text"></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/06/26/JOhnny-Depp/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
+    <a href="/2017/06/27/WAMPServer/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">WAMPServer介绍</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
 
 
 
 
 
   
-    <article id="w-远程仓库概念" class="article article-type-w  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/06/25/远程仓库概念/">远程仓库概念</a>
-    </h1>
   
 
-        
-        <a href="/2017/06/25/远程仓库概念/" class="archive-article-date">
-  	<time datetime="2017-06-25T03:53:21.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-25</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h2><p>所有的程序员，都可以通过这个远程仓库来进行版本库的共享，达到所有人的代码一致的效果！</p>
-<h2 id="如何创建一个远程仓库"><a href="#如何创建一个远程仓库" class="headerlink" title="如何创建一个远程仓库"></a>如何创建一个远程仓库</h2><p>远程仓库是一个裸仓库</p>
-<p>如何初始化一个裸仓库<br>    git init –bare</p>
-<p>平时初始化仓库的时候，直接使用git init，那么会在文件夹下创建一个.git文件夹来保存版本库信息<br>但是使用git init –bare 的时候，仓库信息相关的所有的文件，都直接暴露在当前文件夹下，就相当于没有衣服，所以叫做裸仓库。<br>裸仓库（远成仓库）中不进行任何的开发工作，他只是用来做版本库共享的！<br>一般情况下远程仓库的文件夹名要用.git作为结尾</p>
-<h2 id="将本地仓库推送到远程仓库"><a href="#将本地仓库推送到远程仓库" class="headerlink" title="将本地仓库推送到远程仓库"></a>将本地仓库推送到远程仓库</h2><p>git push 远程仓库的地址 本地分支名称:远程分支名称</p>
-<p>如果本地分支名称和远程分支名称的名字一致，就可以直接写一个<br>举个例子： git push 远程仓库地址 master</p>
-<h2 id="如何将远程仓库获取到本地"><a href="#如何将远程仓库获取到本地" class="headerlink" title="如何将远程仓库获取到本地"></a>如何将远程仓库获取到本地</h2><p>git clone 远程仓库地址 本地文件夹名称</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/06/25/远程仓库概念/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-  
-    <article id="post-分支相关命令" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/06/25/分支相关命令/">分支相关命令</a>
-    </h1>
   
 
-        
-        <a href="/2015/06/25/分支相关命令/" class="archive-article-date">
-  	<time datetime="2015-06-25T03:50:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-06-25</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="创建分支"><a href="#创建分支" class="headerlink" title="创建分支"></a>创建分支</h2><p>git branch 分支名称</p>
-<h2 id="查看所有分支"><a href="#查看所有分支" class="headerlink" title="查看所有分支"></a>查看所有分支</h2><p>git branch</p>
-<h2 id="切换到指定分支"><a href="#切换到指定分支" class="headerlink" title="切换到指定分支"></a>切换到指定分支</h2><p>git checkout 分支名</p>
-<h2 id="合并分支"><a href="#合并分支" class="headerlink" title="合并分支"></a>合并分支</h2><p>git merge 分支名<br>将指定的分支 合并到 当前的分支</p>
-<h2 id="删除分支"><a href="#删除分支" class="headerlink" title="删除分支"></a>删除分支</h2><p>git branch -d 分支名称</p>
-<p>删除分支的时候，如果分支修改的内容没有被合并，那么会提示不能删除，要删除需要合并，或者使用-D</p>
-<h2 id="创建并切换到新的分支"><a href="#创建并切换到新的分支" class="headerlink" title="创建并切换到新的分支"></a>创建并切换到新的分支</h2><p>git checkout -b 分支名</p>
-<p>在分支进行切换之前，要对所有的内容进行一次add 和commit操作</p>
-<p>master分支是在仓库初始化之后，第一次提交完成的时候才出现的！</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2015/06/25/分支相关命令/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-  
   
 
 
@@ -484,8 +337,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
